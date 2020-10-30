@@ -20,5 +20,15 @@ async function getData() {
   copyright.textContent = data.copyright;
 }
 
+img.onclick = () => {
+  img.classList.toggle('resize')
+  if (img.classList.contains('resize')){
+    document.body.style = 'overflow: hidden'
+  } else {
+    document.body.style = 'overflow: auto'
+  }
+}
+
+
 getData()
 console.log(img.src)

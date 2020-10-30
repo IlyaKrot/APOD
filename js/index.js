@@ -11,7 +11,6 @@ async function getData() {
   .then(json => {
     data = json
   });
-  console.log(data)
   title.textContent = data.title.toUpperCase()
   img.src = data.hdurl
   img.alt = data.title
@@ -29,6 +28,4 @@ img.onclick = () => {
   }
 }
 
-
 getData()
-console.log(img.src)
